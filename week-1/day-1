@@ -1,0 +1,93 @@
+ salesforce-training – Day 1
+
+ Date:
+14 April 2026
+
+ Topics Learned Today
+
+1.  Introduction to Salesforce
+2.  What is CRM
+3.  Salesforce Interface Basics
+4.  Objects and Records
+5.  Salesforce Admin vs Developer
+6.  Real-world Salesforce Usage
+
+1.  What is Salesforce?
+
+Salesforce is a cloud-based CRM platform used by companies to manage customers, sales, support, and business processes.
+
+It helps organizations:
+1.  Store customer information
+2.  Track sales
+3. Improve customer relationships
+4.  Automate business tasks
+
+2.  What is CRM?
+
+CRM stands for Customer Relationship Management.
+
+CRM helps companies:
+1.  Manage customer data
+2.  Track communication with customers
+3.  Improve customer service
+4.  Increase sales and productivity
+
+Example:
+A company can track customer calls, emails, and purchases in one system.
+
+3.  What is an Object in Salesforce?
+
+Objects are database tables in Salesforce used to store data.
+
+Examples:
+1. Account → Stores company information
+2.  Contact → Stores customer information
+3. Lead → Stores potential customer information
+
+3.  What is a Record?
+
+A record is a single entry inside an object.
+
+Example:
+If Contact is an object,
+then:
+1. Name: Ravi Kumar
+2. Email: ravi@gmail.com
+
+This individual data is called a record.
+
+ Salesforce Admin vs Developer
+
+ Admin vs Developer 
+
+1.  Configures Salesforce - Builds custom applications 
+2.  Manages users and security - Writes Apex and Lightning code 
+3.  Creates reports and dashboards - Develops automation and integrations 
+4.  Uses low-code tools - Uses programming 
+
+ Real-World Applications of Salesforce
+
+1.  College Management System
+2.  Hospital Management System
+3.  Banking CRM
+4.  E-commerce Customer Support
+5.  Employee Management System
+
+ Key Learnings
+
+1. Salesforce is the world's leading CRM platform.
+2. CRM helps businesses manage customer relationships.
+3.  Objects store data in Salesforce.
+4. Records are entries inside objects.
+5. Salesforce developers build custom business solutions.
+
+ Doubts / Questions
+
+1. How does Salesforce store huge amounts of customer data?
+2. How are objects connected with each other?
+3.  What is Apex programming language?
+
+Trailhead screenshots
+1. https://1drv.ms/i/c/09e15607fd887097/IQBH27N3R6nXTKkdvlkfPHu2AbpZtlmNVo7CClLlkK39N6I?e=offU4C
+2. https://1drv.ms/i/c/09e15607fd887097/IQAtLUyraDTuQaqR5IWlTqDSAY9RnHU9YZl2VRkz-gEJhGQ?e=Qon3hH
+3. https://1drv.ms/i/c/09e15607fd887097/IQD9pfr1prNcR7CtmIBvFj9CAXx89TjEvntSuIkShEoZN-g?e=nURnH1
