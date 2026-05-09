@@ -1,145 +1,176 @@
- salesforce-training – Day 2
- 
- 1. README.md containing:
-   1. What is an Object?
-   -> An Object in Salesforce is used to store data.  
-   ->  It is similar to a table in a database.
-    Examples:
-        1.  Student
-        2. Faculty
-        3. Course
-        4.  Department
+saleforce-training Day-2
+Date:
+  9/05/2026
 
- 2. Difference Between Record and Field
-   1. Record
-    -> A complete set of information
-    ->  Similar to a row in a table
-    ->  Represents one individual entry
-    ->  Contains multiple fields
-    -> Example: One student's complete details
-
-    2. Field
-    ->  A single piece of information
-    ->  Similar to a column in a table
-    ->  Represents one attribute/property
-    ->  Used to store specific data
-     >  Example: Name, Email, Roll Number
-
-   3. 	Difference between Lookup and Master-Detail
-         1.  Lookup
-            ->  A Lookup Relationship is a loose connection between two objects.
-            ->   Child object can exist independently
-            ->   Used when objects are related but not fully dependent
-         Example:
-             Student → Course
-        2. Master-Detail
-            ->  A Master-Detail Relationship is a strong parent-child relationship.
-            ->  Child record depends on parent record
-            ->  If parent is deleted, child records are also deleted
-       Example:
-          Course → Department
-
-	   4.  Screenshots from Trailhead
-         https://1drv.ms/i/c/09e15607fd887097/IQD9pfr1prNcR7CtmIBvFj9CAXx89TjEvntSuIkShEoZN-g?e=QH4q8t
-
-2️.  Create a simple diagram
-   College Management System 
-     1. Objects
-       -> Student
-       -> Faculty
-       -> Course
-       -> Department
-     2. Relationships
-      -> One Department has many Courses
-      -> One Faculty teaches many Courses
-      -> Students enroll in Courses
-    3. Important Fields
-       Student Object
-      -> Student Name
-      -> Roll Number
-      -> Email
-      -> Phone Number
-  4. Faculty Object
-      -> Faculty Name
-      -> Subject
-      -> Department
- 5. Course Object
-      -> Course Name
-      -> Course ID
-      -> Credits
- 6. Department Object
-      -> Department Name
-      -> HOD Name
- 7.  Schema Diagram
-      https://1drv.ms/i/c/09e15607fd887097/IQCUoxfdUpBhQbICVkVuN19LATMlEKVjFoAUJkmEIBSpS6c?e=7zUCIj
-  
-1. Difference Between Standard and Custom Objects
-     1. Standard Objects
-        ->  Pre-built by Salesforce
-        ->   Available by default
-        ->   Used for common business needs
-        ->   Examples: Account, Contact, Lead, Opportunity
-        ->   Cannot be deleted permanently
-        ->   Already contain standard fields
-        ->   Names do not end with __c
-        ->   Created and maintained by Salesforce
-        ->   Limited customization
-   2.  Custom Objects
-          ->  Created by users or developers
-          ->  Need to be created manually
-          ->  Used for specific business requirements
-          ->  Examples: Student__c, Library__c, Hospital_Record__c
-          ->  Can be deleted if not needed
-          ->  Fields are created by the user
-          ->  Names end with __c
-          ->  Created and maintained by admin/developer
-          ->  Highly customizable    
-2.	What is a Record?
-     ->  A Record is a single set of information stored in an object in Salesforce.
-     ->  It contains data about one specific item or person.
-     ->  A record is made up of different fields and their values.
-     ->  Records are stored inside objects.
-  Example:
-    If Student is an object, then:
-     -> Name: Ruksana
-     -> Roll Number: 101
-     -> Branch:IT
-This complete information is called a Record.
-Simple Understanding:
-  -> Object = Table
-  -> Field = Column
-  -> Record = Single Row/Data inside the object
-
-3.  What is a Lookup Relationship?
-       ->   A Lookup Relationship is a loose connection between two objects.
-       ->   Child object can exist independently
-       ->   Used when objects are related but not fully dependent
-     Example:
-       Student → Course
-
-
-4. What is a Master-Detail Relationship?
-      ->  A Master-Detail Relationship is a strong parent-child relationship.
-      ->  Child record depends on parent record
-      ->  If parent is deleted, child records are also deleted
-   Example:
-       Course → Department
-
-
-5.  Why are Relationships Important in Databases?
-     -> Relationships help connect data between different objects.
-Benefits:
-    -> Avoid duplicate data
-    -> Organize data properly
-    -> Improve data management
-    -> Represent real-world connections
+Task 1: Connect Day 1 + Day 2
+ -> How CRM Concepts Fit into Salesforce Platform
+ -> Salesforce uses CRM concepts like Account, Contact, and Opportunity as Objects inside Apps.
+Account
+ ->Account stores information about a company or customer organization.
 Example:
-    -> Students enroll in courses
-    -> Faculty teaches courses
-    -> Departments manage courses
+  ->Company name
+  ->Address
+  ->Industry
+In Salesforce:
+   ->Account is a Standard Object.
+Contact
+  ->Contact stores information about people related to an Account.
+Example:
+   ->Customer name
+   ->Phone number
+   ->Email
+In Salesforce:
+  ->Contact is linked to an Account object.
+Opportunity
+   ->Opportunity stores sales deals or business opportunities.
+Example:
+   ->Deal amount
+   ->Stage 
+   ->Closing date
+In Salesforce:
+   ->Opportunity helps sales teams track deals and revenue.
+How They Fit Together
+   Inside a Salesforce App:
+        ->Account stores company details
+        ->Contact stores people related to that company
+        ->Opportunity stores sales/business deals with that company
+Example:
+   ->Account = TCS Company
+    ->Contact = Manager working at TCS
+     ->Opportunity = Software project deal with TCS
 
-  1.  Agentforce 360 Platform Basics Badge
-       https://1drv.ms/i/c/09e15607fd887097/IQD9pfr1prNcR7CtmIBvFj9CAXx89TjEvntSuIkShEoZN-g?e=kmmJvT
-  2.  Data Modeling Badge
-        https://1drv.ms/i/c/09e15607fd887097/IQDNVjxg9wsSTZAZpsW294COAfcl_TGSHJvo3osfSP7wghE?e=MltJIL
+Task 2: Platform Understanding
+
+1. What is an App in Salesforce?
+     ->An App in Salesforce is a collection of related tabs, objects, and features created for a specific business process.
+Example:
+   ->Sales App
+    ->Service App
+Purpose:
+    ->Apps help users access all required tools in one place.
+
+2. What is an Object?
+     ->An Object is a database table used to store information in Salesforce.
+Example:
+    ->Account
+    ->Contact
+    ->Student
+Objects contain:
+    ->Records
+    ->Fields
+     ->Data
+3. What is a Tab?
+     ->A Tab is a user interface element used to open and access objects or pages in Salesforce.
+Example:
+    ->Account Tab
+    ->Contact Tab
+   ->Tabs help users navigate through the application.
+
+Task 3: Configuration vs Coding
+
+1. When Should We Use Configuration (No Code)?
+      ->Configuration is used when requirements can be completed using Salesforce built-in tools without writing code.
+Examples:
+     ->Creating Validation Rules
+Example: 
+    ->Prevent users from saving empty phone numbers.
+    ->Creating Flow Automation
+Example: 
+     ->Automatically send email when a record is created.
+Advantages:
+     ->Faster
+     ->Easier maintenance
+     ->No programming required
+2. When Should We Use Coding (Apex)?
+     ->Coding is used when business requirements are complex and cannot be handled using configuration tools.
+Examples:
+     ->External API Integration
+Example: 
+     ->Connect Salesforce with payment gateway or hospital software.
+     ->Complex Trigger Logic
+Example: 
+     ->Automatically update multiple related records with custom calculations.
+Advantages:
+     ->More flexibility
+     ->Handles advanced business logic
+
+Task 4: Real System Thinking
+Example:
+   ->College Management System
+1. App Name
+    ->College Management App
+
+2. Objects Inside the App
+       ->Student
+       ->Student name
+       ->Roll number
+       ->Department
+       ->Faculty
+       ->Faculty name
+       ->Subject
+       ->Contact details
+       ->Course
+       ->Course name
+       ->Course code
+        ->Attendance
+        ->Student attendance records
+        ->Results
+        ->Marks
+       ->Grades
+3. How Users Will Interact
+        ->Admin
+        ->Manage students and faculty records
+        ->Create courses
+        ->Faculty
+        ->Update attendance
+        ->Enter marks and results
+        ->Students
+        ->View attendance
+        ->Check results and course details
+
+ Git submission:
+
+1. What is Salesforce Platform?
+     ->Salesforce is a cloud-based CRM platform that helps businesses manage customers, sales, services, and applications.
+     ->It provides tools for automation, data management, and application development.
+2. Explain App, Object, and Tab?
+   App
+     ->An App in Salesforce is a collection of tabs, objects, and tools created for a specific business purpose.
+Example:
+    ->Sales App, Service App
+ Object
+    ->An Object is used to store data in Salesforce, similar to a database table.
+Example:
+    ->Account, Contact, Opportunity
+ Tab
+    ->A Tab is used to open and access objects or applications from the Salesforce interface.
+
+3. Difference Between Configuration and Coding?
+    Configuration (No Code)
+         ->Configuration is done using clicks without writing code.
+Examples:
+    1. Creating validation rules
+    2. Building flows and automation
+   Coding (Apex)
+       ->Coding is used when complex business logic is required.
+Examples:
+   1. Custom API integration
+   2. Complex trigger development
+
+4. My System Design?
+    App Name
+        ->College Management System
+   Objects
+        -> Student
+        -> Faculty
+        -> Course
+        -> Attendance
+ User Interaction
+        -> Admin manages student records
+        -> Faculty updates attendance
+        -> Students view courses and results
+
+5. Screenshots from Trailhead?
+    https://1drv.ms/i/c/09e15607fd887097/IQD9pfr1prNcR7CtmIBvFj9CAXx89TjEvntSuIkShEoZN-g?e=2xK9Bf
+
 
