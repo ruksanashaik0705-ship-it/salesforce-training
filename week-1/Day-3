@@ -1,0 +1,137 @@
+Day 3 - salesforce-training
+Date:
+  11/05/2026
+  
+1. Difference Between App, Object, Record, and Field?
+  a. App
+    ->An app is a collection of tools, tabs, and objects used together for a specific business purpose.
+Example:
+   ->College Management App
+b. Object
+    ->An object is like a database table used to store information.
+Example:
+    ->Student Object
+c. Record
+    ->A record is a single entry inside an object.
+Example:
+    ->A student named Shaik Ruksana inside the Student Object.
+d.  Field
+    ->A field stores a specific piece of information inside a record.
+Example:
+     ->Student Name, Age, Email
+
+2. Standard vs Custom Objects?
+   a.  Standard Objects
+            ->Standard objects are pre-built objects provided by Salesforce. These objects are commonly used for general business purposes.
+Examples:
+  * Account
+  * Contact
+  * Opportunity
+  * Lead
+   ->These objects are already available in Salesforce and help companies manage customer and business data.
+b.  Custom Objects
+    ->Custom objects are objects created by users according to business requirements. They are used when the company needs data that is not available in standard objects.
+
+Examples:
+ * Student
+ * Faculty
+ * Course
+ * Department
+ ->Custom objects help organizations build systems based on their own business processes.
+   
+3. Your College Data Model?
+  * Objects
+  a. Student
+    ->Stores student information such as:
+   * Student Name
+   * Age
+   * Email
+   * Course
+ b. Faculty
+    ->Stores faculty details such as:
+   * Faculty Name
+   * Department
+   * Subject
+c. Course
+    ->Stores course information such as:
+    * Course Name
+    * Duration
+    * Total Seats
+d. Department
+   ->Stores department details such as:
+   * Department Name
+   * HOD Name
+ Relationships
+   * One Department can have many Courses.
+   * One Faculty can teach many Courses.
+   *  One Course can have many Students.
+Relationship Types
+  * Lookup Relationship between Course and Faculty
+  * Lookup Relationship between Course and Department
+  * Lookup Relationship between Student and Course
+Diagram/Image
+
+Department
+↓
+Course
+↓
+Student
+
+Faculty
+↓
+Course
+
+This diagram shows how objects are connected in the College Management System.
+
+ 4. Formula Fields?
+   1. Full Name
+        ->This formula field combines the First Name and Last Name automatically.
+ Example:
+  *First Name: Shaik
+  *Last Name: Ruksana
+*Output: Shaik Ruksana
+ Explanation:
+    ->This field helps avoid manual typing and reduces mistakes while entering names.
+ 2. Percentage
+     ->This formula field calculates the student percentage automatically based on marks obtained.
+Example:
+   (Marks Obtained / Total Marks) × 100
+ Explanation:
+    ->It saves time and gives accurate results without manual calculations.
+ 3. Remaining Seats
+    ->This formula field calculates the available seats in a course automatically.
+ Example
+    ->Total Seats - Filled Seats
+ Explanation
+    ->It helps the college management know how many seats are still available for admissions.
+
+ 5. Validation Rules?
+    1. Email Cannot Be Empty
+      *This validation rule checks whether the email field is filled or not.
+   Explanation:
+      *It prevents missing contact information and helps maintain proper communication with students.
+   2. Student Age Cannot Be Negative
+     *This validation rule checks that the student age is greater than zero.
+  Explanation:
+     *It prevents invalid student data from being entered into the system.
+ 3. Course Seats Cannot Exceed Limit
+    *This validation rule ensures that the number of students enrolled does not exceed the total seat limit.
+ Explanation:
+    *It prevents overbooking and helps manage course admissions properly.
+
+ 6. Reflection – Why Structured Enterprise Data Matters?
+
+Structured enterprise data helps companies organize and manage information properly. It improves accuracy, reduces duplicate data, and makes searching information easier.
+
+With structured data, businesses can generate reports quickly, maintain data consistency, and make better decisions. It also helps different departments work together efficiently because all information is connected through relationships.
+
+Structured data improves security, saves time, reduces manual errors, and supports automation in enterprise systems like Salesforce.
+
+SCREENSHOTS:
+ 1. Data Modeling
+ 2. Formulas and Validations
+    https://1drv.ms/i/c/09e15607fd887097/IQBCdym3hBGOQ5qCmSXT6Us5AWsrrqnzqEQLSxfkqSkWxEY?e=CDR2kF
+
+
+
+
