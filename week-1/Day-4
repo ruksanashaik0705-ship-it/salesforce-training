@@ -1,0 +1,111 @@
+saleforce-training Day-4
+Date:
+  12-05-2026
+
+1. What is Flow Builder?
+   ->Flow Builder is a Salesforce automation tool used to automate business processes without coding.
+   ->It helps businesses reduce manual work, improve accuracy, save time, and automate workflows like sending emails, updating records, approvals, and notifications.
+   ->Flow Builder uses a visual drag-and-drop interface to create automation easily.
+
+2. Types of Flows?
+  1.Screen Flow
+     ->Screen Flow is used when user interaction is required.
+Features:
+    ->Displays screens to users
+    ->Takes user input
+    ->Used for forms and guided processes
+Example:
+   ->Student registration form
+   ->Fee payment form
+  ->Help desk support form
+2. Record Triggered Flow
+    ->Record Triggered Flow runs automatically when a record is created, updated, or deleted.
+Features:
+  ->Fully automated
+   ->No user interaction required
+   ->Runs in background
+
+3. Automation Ideas (5 Examples)?
+  1. Auto Email After Student Registration
+     ->When a student registers, Salesforce automatically sends a confirmation email with student details.
+Why automation helps:
+   *Saves staff time
+   *Instant communication
+   *Reduces manual mistakes
+2. Auto Update Remaining Course Seats
+     ->When a student enrolls in a course, available seats are automatically reduced.
+Why automation helps:
+    *Prevents overbooking
+    *Real-time updates
+    *Accurate seat management
+3. Notify Faculty When Course is Full
+     ->When all seats are filled, faculty receives an automatic notification.
+Why automation helps:
+   *Faster communication
+    *Better course planning
+    *Reduces manual checking
+4. Generate Student ID Automatically
+    ->When a new student record is created, Salesforce automatically generates a student ID.
+Why automation helps:
+    *Avoids duplicate IDs
+    *Faster registration
+    *Improves consistency
+5. Send Fee Payment Reminder
+     ->Before fee deadline, students automatically receive reminder emails.
+Why automation helps:
+    *Improves payment tracking
+    *Reduces late payments
+    *Saves administrative effort
+
+4. Flow Design Thinking?
+  1. Automation Process:
+      ->Auto Email After Student Registration
+Flow Diagram:
+[Student Registration Created]
+              ↓
+      [Record Triggered Flow]
+              ↓
+   [Check Student Email Exists?]
+          /           \
+       Yes             No
+        ↓               ↓
+ [Send Confirmation]   [End]
+        ↓
+      [Finish]
+
+5. Manual vs Automated Process?
+  Process: Fee Payment Reminder
+   1.Manual Process
+     *Staff checks student fee records manually
+     *Staff sends reminder emails individually
+     *Requires more time and effort
+Problems in Manual Process:
+   ->Human errors
+   ->Delayed reminders
+   ->Time consuming
+   ->Some students may be missed
+2. Automated Process in Salesforce
+    *Salesforce checks due dates automatically
+    *Reminder emails are sent automatically before deadline
+Benefits:
+   ->Faster process
+   ->Accurate reminders
+   ->Saves employee time
+   ->Improves productivity
+
+6. Reflection — Why Automation Matters in Enterprise Systems?
+    ->Automation is important because it helps companies work faster, reduce errors, and improve efficiency.
+   ->Businesses handle large amounts of data and repetitive tasks daily. Manual processes take more time and can create mistakes.
+Salesforce automation helps organizations:
+   *Improve productivity
+  *Maintain data consistency
+  *Save operational costs
+  *Increase customer satisfaction
+  *Reduce repetitive manual work
+  *No-code automation tools like Flow Builder allow businesses to automate workflows easily without advanced programming knowledge.
+
+
+screenshots 
+1. Flow Builder Basics
+2. Data and Actions in Flows
+   https://1drv.ms/i/c/09e15607fd887097/IQCJnjEV8dYzQKlyehz5CyqeATrPAVocFe4QAqBeeijo4Ds?e=7m0393
