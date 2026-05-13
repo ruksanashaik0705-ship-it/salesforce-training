@@ -1,0 +1,157 @@
+saleforce-training Day-5
+Date:
+ 13-05-2026
+
+ 1. What is Apex?
+    * Salesforce Apex is a strongly typed, object-oriented programming.
+    * language developed by Salesforce that allows developers to execute flow and transaction control statements on the Salesforce platform.
+    *It is used to add custom business logic, automate processes, and interact with Salesforce data and applications.
+
+2. Difference:
+ Flow vs Apex?
+ Configuration vs Coding?
+  1.Difference Between Flow and Apex:
+    *Flow is a no-code/low-code automation tool, while Apex is a coding language in Salesforce.    
+    *Flow uses drag-and-drop elements, whereas Apex uses written code.
+    *Flow is easier for beginners, while Apex requires programming skills.
+    *Flow is used for simple automation, while Apex is used for complex business logic.
+   *Flow development is faster, whereas Apex provides more flexibility and customization.
+2. Difference Between Configuration and Coding:
+  *Configuration is done without code, while coding requires programming.
+  *Configuration uses Salesforce built-in features, whereas coding creates custom functionality.
+  *Configuration is easier and quicker to implement, while coding takes more development effort.
+  *Configuration is suitable for standard requirements, whereas coding is suitable for advanced requirements.
+  *Configuration is mainly handled by admins, while coding is mainly handled by developers.
+
+ 3. Real Examples Where Apex Is Needed(3 examples)?
+   1. Complex Approval Process:
+      ->When a company needs custom approval logic based on multiple conditions, Apex is used to automate the process beyond standard Flow capabilities.
+   2.Integration with External Systems:
+      ->Apex is used to connect Salesforce with external applications such as payment gateways, ERP systems, or banking services through APIs and web services.
+  3.Processing Large Amounts of Data:
+     ->Apex, especially Batch Apex, is used when handling thousands or millions of records, such as updating customer records or generating large reports automatically.
+
+4. Integrated System Design?
+Explain your complete College Management System using:
+ CRM
+ Objects
+ Relationships
+ Validation
+ Flow
+ Apex
+
+ Integrated College Management System Design:
+ 1. CRM:
+   ->The College Management System is built on Salesforce CRM to manage student, faculty, course, and administrative data in a centralized platform. It helps automate academic processes, improve communication, and maintain accurate records.
+ 2. Objects:
+    ->The system contains both standard and custom objects.
+  a.Standard Objects
+     * Account – Stores department or organization details.
+     * Contact – Stores student and faculty information.
+  b.Custom Objects
+    * Student__c – Student details such as roll number, branch, and semester.
+    * Faculty__c – Faculty information and subjects handled.
+    * Course__c – Course details including course name and credits.
+    * Attendance__c – Student attendance records.
+    * Examination__c – Exam details and marks.
+    * Fee__c – Student fee payment information.
+3. Relationships:
+   * One Faculty can teach many Courses using a lookup relationship.
+   * One Student can have many Attendance records using a master-detail relationship.
+   * One Student can have multiple Examination records.
+   * One Course can include many Students.
+   * Fee records are connected to Students for payment tracking.
+   *These relationships help maintain connected and organized academic data.
+4. Validation:
+   *Validation Rules ensure accurate data entry in the system.
+Examples:
+  * Student roll number cannot be left blank.
+  * Phone numbers must contain exactly 10 digits.
+  * Fee amount cannot be negative.
+  * Attendance percentage cannot exceed 100%.
+  * Examination marks must be within valid limits.
+5. Flow:
+  *Flows automate processes without coding.
+Examples:
+  * Automatically send an email when a student registers for a course.
+  * Update attendance percentage after attendance records are added.
+  * Send fee payment reminders to students.
+  * Automatically create student welcome notifications during admission.
+6. Apex:
+  *Apex is used for advanced and complex business logic.
+Examples:
+  * Generate semester result calculations automatically.
+  * Integrate the college system with external payment gateways.
+  * Process large student data using Batch Apex.
+  * Create custom APIs for mobile application integration.
+  * Automatically rank students based on examination scores.
+  * 
+5. Pseudocode Examples(Add your logic examples)?
+   1. Student Attendance Calculation:
+      START
+Get total classes conducted
+Get classes attended by student
+Calculate attendance percentage
+
+IF attendance percentage < 75
+    Display "Attendance Shortage"
+ELSE
+    Display "Attendance Eligible"
+END IF
+STOP
+2. Fee Payment Validation:
+  START
+Get student fee amount
+Get paid amount
+
+IF paid amount >= fee amount
+    Update status as "Paid"
+ELSE
+    Update status as "Pending"
+END IF
+STOP
+3. Examination Result Processing:
+  START
+Get marks of all subjects
+Calculate total marks
+Calculate average
+
+IF average >= 35
+    Display "Pass"
+ELSE
+    Display "Fail"
+END IF
+STOP
+4. Course Registration Logic:
+START
+Check available seats in course
+
+IF seats available
+    Register student
+    Reduce seat count by 1
+ELSE
+    Display "Course Full"
+END IF
+STOP
+5. Email Notification Logic:
+START
+When new student record is created
+Send welcome email to student
+Send notification to administration
+STOP
+
+6. Reflection Why enterprise systems eventually need programming?
+
+  *Enterprise systems initially work well using configuration tools and standard features.
+  *However, as business requirements become more complex, programming becomes necessary to handle advanced operations and custom functionality.
+  *Large organizations often need complex business logic, integrations with external systems, automated processing, and high-performance data handling that cannot be fully achieved using only no-code tools.
+  *Programming helps developers create flexible and scalable solutions that match real business needs.
+  *In Salesforce, tools like Flow and configuration are useful for standard automation, but Apex is required for advanced calculations, API integrations, bulk data processing, custom validations, and secure system behavior.
+  *Programming also improves system efficiency, reduces manual work, and supports future growth. 
+  *As enterprise applications expand, coding becomes essential for customization, automation, maintainability, and delivering better user experiences.
+
+
+  screenshots
+  1.  Apex & .NET Basics
+  2. Apex Basics & Database
+     https://1drv.ms/i/c/09e15607fd887097/IQDS2xBgPTgTRL58gMFDrLO1AfYrsJOTBEtOgc78Yj6nGGo?e=uHis5X
