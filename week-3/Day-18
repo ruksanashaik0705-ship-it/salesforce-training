@@ -1,1 +1,154 @@
-g
+salesforce_training Day-18
+
+1.System Overview
+-> The system is a College Management System built on Salesforce that manages students, courses, faculty, attendance, fees, and approvals using Flows, Apex, LWC, and AI assistance.
+Key Modules
+* Student Management
+* Course Management
+* Faculty Management
+* Attendance Tracking
+* Fee Management
+* Approval Workflows
+* AI Assistance (Agentforce)
+The system is designed for scalability, automation, and enterprise-grade governance.
+
+2.Architecture Overview
+-> The system follows a layered architecture model.
+Layers
+1. Frontend Layer
+* Lightning Web Components (LWC)
+* User Interface
+* Data display and interaction
+ Business Logic Layer
+* Flows
+* Apex Classes
+* Validation Rules
+3. Data Layer
+* Salesforce Objects
+* Relationships
+* Data Storage
+4. Integration Layer
+* APIs
+* External systems
+* AI services
+This separation ensures modular and maintainable design.
+
+3.Objects & Relationships
+-> Salesforce objects represent real-world entities.
+Objects
+* Student__c
+* Course__c
+* Faculty__c
+* Attendance__c
+* Fee__c
+* Enrollment__c
+Relationships
+* Student → Enrollment (One-to-Many)
+* Course → Enrollment (One-to-Many)
+* Faculty → Course (One-to-Many)
+* Student → Attendance (One-to-Many)
+Relationships ensure structured and connected data.
+
+4.Validation Rules
+-> Validation rules ensure data accuracy and consistency.
+Examples
+* Student Email must be valid format
+* Fee Amount cannot be negative
+* Attendance cannot exceed 100%
+* Mandatory fields must be filled
+Benefits
+* Prevents incorrect data entry
+* Maintains data integrity
+* Improves reporting accuracy
+* Reduces errors
+Validation rules enforce business correctness.
+
+5.Flow Explanations
+-> Flows automate business processes without code.
+Examples
+1. Enrollment Flow
+* Student applies for course
+* System checks availability
+* Auto-enroll or waitlist
+ Fee Approval Flow
+* Student submits payment request
+* Manager approval required
+* Finance verification
+* Confirmation generated
+Flows reduce manual effort and improve efficiency.
+6.Apex Logic
+-> Apex is used for complex business logic.
+Examples
+* Bulk fee calculation
+* Automated attendance processing
+* Trigger-based record updates
+* Integration with external APIs
+Benefits
+* Handles complex logic
+* Supports bulk operations
+* Enables automation beyond Flow limits
+Apex provides powerful backend processing.
+
+7.LWC Screens
+-> Lightning Web Components provide the user interface.
+Screens
+* Student Dashboard
+* Course Registration Screen
+* Fee Payment Screen
+* Attendance View
+* Admin Control Panel
+Benefits
+* Fast UI rendering
+* Reusable components
+* Interactive experience
+* Real-time updates
+LWC improves user experience and performance.
+
+8.Workflow Explanation
+-> The system follows a structured workflow.
+1. User submits request (UI - LWC)
+2. Flow validates input
+3. Apex executes business logic
+4. Data stored in Salesforce objects
+5. Approval process triggered if required
+6. AI agent provides suggestions
+7. Final status updated
+This ensures smooth end-to-end automation.
+Scaling Considerations
+-> Enterprise systems must handle growth and performance.
+Challenges
+* Large number of users
+* High data volume
+* Concurrent transactions
+* API limits
+* Performance bottlenecks
+Solutions
+* Use bulk processing in Apex
+* Optimize SOQL queries
+* Use asynchronous processing
+* Modular architecture
+* Efficient data modeling
+Scalability ensures system reliability under heavy load.
+
+Revised Question and Answers:
+
+1. Why do enterprise systems require layered architecture?
+-> Layered architecture separates responsibilities into UI, logic, and data layers to improve maintainability, scalability, and flexibility.
+2. Why are frontend/backend separation important?
+-> Separation allows independent development, easier debugging, and better system organization.
+3. Why are Flows and Apex both useful?
+-> Flows handle simple automation while Apex handles complex business logic.
+4. Why are reusable components powerful?
+-> Reusable components reduce duplication, improve consistency, and speed up development.
+5. Why do enterprise systems require approvals?
+-> Approvals ensure control, accountability, and validation of critical business actions.
+6. Why is debugging important?
+-> Debugging helps identify, analyze, and fix system issues quickly.
+7. Why is data quality critical?
+-> Data quality ensures accurate reporting, reliable decisions, and system integrity.
+8. Why do large systems require scalability thinking?
+-> Scalability ensures the system performs efficiently under increased load.
+9. How can AI improve enterprise systems?
+-> AI improves automation, decision-making, predictions, and user experience.
+10. What is the difference between coding and enterprise engineering
+-> Coding focuses on writing functionality, while enterprise engineering focuses on building scalable, secure, and maintainable systems with governance, testing, and architecture.
