@@ -1,1 +1,178 @@
-fs
+salesforce_training Day-16
+
+Debugging Best Practices
+1. Why are Debug Logs Important?
+   -> Debug logs capture system behavior during execution and help developers understand what is happening inside the system.
+Example
+A flow fails during case creation:
+* Debug logs show which step failed
+* Identify validation rule errors
+* Track Apex execution flow
+Benefits
+* Helps identify root cause of issues
+* Improves troubleshooting speed
+* Shows system execution flow
+* Supports error analysis
+* Reduces downtime
+Debug logs are essential for understanding hidden system behavior.
+
+2. Common Bug Scenarios
+-> Bugs occur when system behavior is not as expected.
+Common Scenarios
+a. Validation Errors
+-> Required fields missing or incorrect input
+b. Flow Failures
+-> Decision logic not working properly
+c. Apex Exceptions
+-> Null pointer or governor limit errors
+d. LWC UI Issues
+-> Data not rendering correctly
+e. Integration Failures
+-> API callouts failing or timeout issues
+Bugs are common in complex enterprise applications.
+
+3. Why is Debugging Difficult in Enterprise Systems?
+-> Enterprise systems are large, interconnected, and data-heavy, making debugging complex.
+Challenges
+* Multiple users accessing system simultaneously
+* Large data volume
+* Complex business rules
+* Multiple integrations
+* Layered architecture (UI, backend, API)
+Example
+A single error in a flow may depend on:
+* Apex class
+* Validation rules
+* Permissions
+* Data conditions
+Debugging requires analyzing multiple layers of the system.
+
+4. What Problems Happen When Systems Scale?
+-> Scaling introduces performance and complexity challenges.
+Problems
+a. Performance Issues
+-> Slow page loads and long processing times
+b. Data Bottlenecks
+-> Large datasets slow queries
+c. Concurrency Issues
+-> Multiple users updating same record
+d. Integration Load
+-> External APIs may fail under heavy traffic
+e. Maintenance Complexity
+-> Harder to track and fix bugs
+Scalability must be considered during development.
+5. Why Should Components Be Reusable?
+-> Reusable components reduce duplication and improve development efficiency.
+Example
+A Lightning Web Component for "Student Card" can be used in:
+* Student page
+* Admin dashboard
+* Reports section
+Benefits
+* Reduces code duplication
+* Improves consistency
+* Faster development
+* Easier maintenance
+* Better scalability
+Reusable components support modular system design.
+
+6. Why is Maintainability Important?
+-> Maintainability refers to how easily a system can be updated, fixed, or improved.
+Benefits
+* Easier bug fixes
+* Faster feature updates
+* Reduced technical debt
+* Better team collaboration
+* Long-term system stability
+Poor maintainability leads to complex and fragile systems.
+
+7. Why Should Developers Avoid Tightly Coupled Code?
+-> Tightly coupled code means components depend heavily on each other.
+Problems
+* Difficult to modify one component
+* High risk of breaking changes
+* Hard to reuse components
+* Difficult to test
+* Poor scalability
+Better Approach
+* Use modular design
+* Follow separation of concerns
+* Use interfaces and events
+Loose coupling improves flexibility and maintainability.
+
+8. Why Do Enterprise Systems Require Monitoring?
+-> Monitoring tracks system health, performance, and errors in real time.
+Example
+Monitoring tools track:
+* CPU usage
+* API failures
+* Flow errors
+* Login activity
+* System performance
+Benefits
+* Early issue detection
+* Faster response time
+* Improved reliability
+* Better user experience
+* Prevents system downtime
+Monitoring is essential for production systems.
+
+9. Why is Performance Important in Enterprise Systems?
+-> Performance ensures that systems respond quickly and efficiently under load.
+Factors Affecting Performance
+* Inefficient queries
+* Large data volumes
+* Poorly optimized code
+* Excessive triggers or flows
+Benefits of Good Performance
+* Faster user experience
+* Higher productivity
+* Better scalability
+* Reduced system load
+Performance optimization is critical in enterprise applications.
+
+10. Why is Troubleshooting an Important Engineering Skill?
+-> Troubleshooting is the ability to identify, analyze, and resolve system issues.
+Skills Required
+* Analytical thinking
+* Understanding system architecture
+* Reading logs and errors
+* Identifying root causes
+* Testing solutions
+Benefits
+* Faster issue resolution
+* Reduced downtime
+* Improved system stability
+* Better engineering efficiency
+Troubleshooting is a key skill for enterprise developers.
+
+Reflection
+What is the difference between writing code and maintaining enterprise systems?
+-> Writing code focuses on building features.
+-> Maintaining enterprise systems involves:
+* Debugging issues
+* Monitoring performance
+* Improving scalability
+* Fixing bugs
+* Optimizing systems
+* Ensuring reliability
+Enterprise engineering is not only about writing code but also about sustaining system health over time.
+
+Revision Questions and Answers
+
+1. Why are debug logs important?
+   -> Debug logs help identify issues, track execution flow, and troubleshoot system errors.
+2. Why is debugging difficult in enterprise systems?
+   -> Debugging is difficult due to system complexity, large data, multiple users, and integrations.
+3. Why do enterprise systems require monitoring?
+   -> Monitoring ensures early detection of issues and maintains system performance and reliability.
+4. Why should components be reusable?
+   -> Reusable components reduce duplication, improve consistency, and speed up development.
+5. Why is maintainability important?
+   -> Maintainability ensures systems can be easily updated, fixed, and improved over time.
+6. Why should developers avoid tightly coupled code?
+   -> Tightly coupled code increases dependencies and makes systems hard to modify and maintain.
+7. Why do systems face problems when they scale?
+   -> Scaling introduces performance issues, data bottlenecks, and system complexity.
+8. Why is troubleshooting important?
+   -> Troubleshooting helps quickly identify and resolve system issues, ensuring stability and reliability.
