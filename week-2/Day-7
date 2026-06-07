@@ -1,1 +1,93 @@
-fe3w
+saleforce-training Day-7
+
+1. Why Testing Matters?
+-->Testing is important because it ensures that the application works correctly and helps identify bugs before deployment.
+-->In enterprise systems, testing improves reliability, data accuracy, and user trust.
+Benefits of Testing:
+  ->Prevents bugs and errors
+  ->Improves system reliability
+  ->Ensures business requirements are met
+  ->Reduces maintenance costs
+  ->Increases user confidence
+2. What is Asynchronous Apex?
+-->Asynchronous Apex allows code to run in the background instead of making users wait for long operations to finish. 
+-->It is useful for handling large amounts of data and time-consuming processes.
+Examples:
+  ->Sending bulk emails
+  ->Generating large reports
+  ->Synchronizing data with external systems
+Types:
+  ->Future Methods
+  ->Queueable Apex
+  ->Batch Apex
+  ->Scheduled Apex
+3. What is Salesforce DX?
+-->Salesforce DX (Developer Experience) is a modern development framework that helps developers build, test, and deploy Salesforce applications efficiently.
+Features:
+  ->Source-driven development
+  ->Better team collaboration
+  ->Integration with GitHub
+  ->Easy deployment and testing
+  ->Supports CI/CD practices
+4. Complete System Workflow (College Management System)?
+  ->Student Registration Process
+  ->Student submits registration form.
+  ->Validation Rules verify required fields and data accuracy.
+  ->Record is saved in Salesforce database.
+  ->Flow sends a confirmation email to the student.
+  ->Apex Trigger updates course enrollment count.
+  ->Formula fields automatically recalculate available seats.
+  ->Platform Event sends notifications to faculty if needed.
+  ->Reports and dashboards update automatically.
+  ->Administrators can monitor all activities and analytics.
+  ->This workflow ensures that all processes happen automatically and accurately.
+5. Important Test Cases?
+1. Invalid Email Address
+ ->Test: Enter an incorrect email format.
+ ->Risk if not tested: Notifications may fail.
+2. Duplicate Student Registration
+  ->Test: Register the same student twice.
+  ->Risk if not tested: Duplicate records may be created.
+3. Course Overbooking
+  ->Test: Enroll students after course capacity is reached.
+  ->Risk if not tested: More students than available seats.
+4. Attendance Calculation
+  ->Test: Verify attendance percentage calculations.
+  ->Risk if not tested: Incorrect warnings and reports.
+5. Trigger Execution
+  ->Test: Ensure triggers run after record creation.
+  ->Risk if not tested: Automated actions may fail.
+6. Async Thinking – Background Processing Examples?
+1. Sending Bulk Emails
+-->Large numbers of emails should be sent in the background to avoid slowing down the system.
+2. Report Generation
+-->Complex reports may take time and should run asynchronously.
+3. Data Synchronization
+-->Data exchange with external systems should happen in the background for better performance.
+7. Reflection:Why Enterprise Software Development Needs Structured Workflows
+  ->Enterprise software projects involve many developers and complex requirements. 
+  ->Structured workflows help maintain code quality, improve collaboration, track changes, and reduce deployment risks. 
+  ->Tools like GitHub, Salesforce DX, and CLI make development more organized and efficient.
+
+Revision Questions and Answers
+1. Why are tests important in enterprise systems?
+  ->Tests ensure the system works correctly and prevent bugs from reaching users.
+2. What problems happen without testing?
+ ->Systems may contain bugs, incorrect calculations, security issues, and unreliable functionality.
+3. Why is asynchronous processing useful?
+ ->It allows long-running tasks to execute in the background without affecting user experience.
+4. Difference between synchronous and asynchronous processing?
+ ->Synchronous: Tasks execute one after another, and users wait for completion.
+ ->Asynchronous: Tasks run in the background while users continue working.
+5. Why do developers use version control?
+ ->Version control tracks changes, supports collaboration, and allows rollback when needed.
+6. Why is GitHub important?
+ ->GitHub stores code, tracks versions, manages collaboration, and supports project development.
+7. Why is DX useful for teams?
+ ->Salesforce DX provides a standardized workflow, better collaboration, and easier deployments.
+8. How do Flows, Triggers, and Validation Rules work together?
+ ->Validation Rules check data, Flows automate processes, and Triggers handle advanced business logic.
+9. Why should business logic be tested carefully?
+ ->Incorrect business logic can cause wrong calculations, automation failures, and data inconsistencies.
+10. Why is developer workflow important in large teams?
+ ->It ensures consistency, improves collaboration, reduces conflicts, and increases productivity.
