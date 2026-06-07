@@ -1,1 +1,303 @@
-fs
+salesforce_training_day-14
+
+# Flow Governance and Approval Workflows
+
+## 1. What is an Approval Workflow?
+-> An approval workflow is a business process that requires authorization before certain actions can be completed.
+
+### Example
+
+College Management System:
+A faculty member requests new laboratory equipment costing ₹5,00,000.
+
+Workflow:
+
+1. Faculty submits request
+2. Department Head reviews
+3. Finance Department approves budget
+4. Administration gives final approval
+5. Purchase order is created
+
+### Benefits
+
+* Ensures accountability
+* Prevents unauthorized actions
+* Reduces business risk
+* Maintains compliance
+* Improves decision-making
+
+Approval workflows help organizations maintain control over important business operations.
+
+---
+
+## 2. Why Governance Matters?
+
+-> Governance refers to the policies, rules, and controls that guide how systems and processes operate.
+
+### Governance Goals
+
+* Security
+* Compliance
+* Accountability
+* Reliability
+* Risk management
+
+### Example
+
+A student record system may contain:
+
+* Personal information
+* Grades
+* Financial records
+* Attendance data
+
+Not every employee should have permission to modify this information.
+
+### Benefits
+
+* Protects sensitive data
+* Reduces operational risks
+* Supports regulatory compliance
+* Improves trust
+* Ensures proper control
+
+Without governance, organizations may face security and compliance issues.
+
+---
+
+## 3. What are Branching Workflows?
+
+-> Branching workflows allow a process to follow different paths based on conditions or decisions.
+
+### Example
+
+Student Scholarship Application
+
+If GPA >= 8.5
+
+→ Scholarship Committee Review
+
+If GPA < 8.5
+
+→ Application Rejected
+
+### Why Branching is Useful
+
+* Automates decisions
+* Reduces manual work
+* Improves efficiency
+* Supports business rules
+* Creates flexible workflows
+
+Branching allows organizations to handle different scenarios automatically.
+
+---
+
+## 4. Why Automation Must Follow Business Rules?
+
+-> Automation should always align with company policies and requirements.
+
+### Example
+
+Leave Approval Process
+
+Business Rule:
+
+* Leave less than 3 days → Manager Approval
+* Leave more than 3 days → Manager + HR Approval
+
+The automation must enforce these rules correctly.
+
+### Benefits
+
+* Consistent decisions
+* Reduced errors
+* Improved compliance
+* Better operational control
+* Increased reliability
+
+Automation without business rules can create incorrect outcomes.
+
+---
+
+## 5. Decision Nodes in Flows
+
+-> A decision node evaluates conditions and determines which path a flow should follow.
+
+### Example
+
+Course Registration
+
+If seats available
+
+→ Register Student
+
+Else
+
+→ Add to Waiting List
+
+### Benefits
+
+* Supports branching logic
+* Improves automation accuracy
+* Handles multiple scenarios
+* Reduces manual intervention
+* Makes flows intelligent
+
+Decision nodes are one of the most important components of business automation.
+
+---
+
+## 6. Enterprise Governance Scenario
+
+### Why Sensitive Operations Require Restrictions
+
+Suppose a university system manages:
+
+* 50,000 Students
+* 5,000 Staff Members
+* Financial Transactions
+* Academic Records
+
+Sensitive actions may include:
+
+* Grade modifications
+* Tuition refunds
+* Student record deletion
+* Scholarship approvals
+
+Without restrictions, users could accidentally or intentionally cause damage.
+
+### Risks
+
+a. Unauthorized Access
+
+-> Users may access confidential information.
+
+b. Data Corruption
+
+-> Incorrect changes may affect records.
+
+c. Financial Loss
+
+-> Improper approvals may create financial issues.
+
+d. Compliance Violations
+
+-> Regulations may be violated.
+
+e. Security Breaches
+
+-> Sensitive information may be exposed.
+
+Enterprises restrict critical operations to reduce risk and maintain control.
+
+---
+
+## 7. Approval Workflow Example in Salesforce Flow
+
+### Expense Reimbursement Process
+
+Step 1: Employee submits expense claim
+
+Step 2: Flow checks claim amount
+
+Step 3: Manager approval required
+
+Step 4: Finance review
+
+Step 5: Payment approved
+
+### Benefits
+
+* Standardized process
+* Reduced fraud risk
+* Improved accountability
+* Faster approvals
+* Better audit tracking
+
+Approval processes help large organizations manage operations efficiently.
+
+---
+
+## 8. Auditability in Workflows
+
+-> Auditability means that every action can be tracked and reviewed later.
+
+### Example
+
+A workflow should record:
+
+* Who approved
+* When approval occurred
+* What changes were made
+* Why the decision was made
+
+### Benefits
+
+* Improves transparency
+* Supports investigations
+* Meets compliance requirements
+* Increases accountability
+* Helps troubleshooting
+
+Auditable workflows are essential in enterprise systems.
+
+---
+
+# Reflection
+
+## What is the difference between a simple automation and an enterprise workflow?
+
+-> A simple automation performs a task automatically.
+
+-> An enterprise workflow includes:
+
+* Governance
+* Approval processes
+* Security controls
+* Audit tracking
+* Business rules
+* Decision-making logic
+* Compliance requirements
+
+Enterprise workflows focus on reliability, accountability, and business control in addition to automation.
+
+---
+
+# Revision Questions and Answers
+
+### 1. Why are approval workflows important?
+
+-> Approval workflows ensure that important actions are reviewed and authorized before execution, reducing risk and improving accountability.
+
+### 2. Why do businesses require governance?
+
+-> Governance provides rules, security controls, and accountability mechanisms that help organizations operate safely and effectively.
+
+### 3. What are branching workflows?
+
+-> Branching workflows allow processes to follow different paths based on conditions or business decisions.
+
+### 4. Why should automation follow business rules?
+
+-> Automation must follow business rules to ensure consistency, compliance, and accurate decision-making.
+
+### 5. Why are decision nodes important in flows?
+
+-> Decision nodes evaluate conditions and guide workflows through the correct business path.
+
+### 6. Why should enterprises restrict sensitive operations?
+
+-> Restrictions prevent unauthorized access, reduce security risks, and protect critical business data.
+
+### 7. Why are approvals important in large organizations?
+
+-> Approvals ensure accountability, maintain control, and prevent unauthorized actions that could impact the business.
+
+### 8. Why should workflows be auditable?
+
+-> Auditable workflows provide transparency, support compliance, and allow organizations to track and review business activities.
+
+
+
