@@ -1,1 +1,215 @@
-fwa
+salesforce_training Day-15
+
+Data Management
+1. Why is Clean Data Important?
+   -> Clean data is accurate, complete, consistent, and reliable information stored in a system.
+Example
+College Management System:
+Student records should contain:
+* Correct student names
+* Accurate phone numbers
+* Valid email addresses
+* Proper course information
+Benefits
+* Better decision-making
+* Improved reporting
+* Reduced errors
+* Better customer experience
+* Increased productivity
+Clean data helps organizations operate efficiently and make informed decisions.
+
+2. Data Quality Problems
+-> Poor data quality occurs when information is incorrect, incomplete, duplicated, or outdated.
+Common Data Quality Issues
+a. Duplicate Records
+-> Multiple records for the same person.
+b. Missing Information
+-> Important fields are left blank.
+c. Invalid Data
+-> Incorrect phone numbers or email addresses.
+d. Outdated Records
+-> Information is no longer current.
+e. Inconsistent Data
+-> Different formats used for the same information.
+Poor data quality can negatively impact business operations and reporting.
+
+3. What Problems Happen Because of Duplicate Records?
+-> Duplicate records occur when the same customer, student, or employee is entered multiple times.
+Example
+Student Record 1:
+Ravi Kumar
+Student Record 2:
+Ravi Kumar
+Both records represent the same student.
+Problems
+* Confusing reports
+* Inaccurate analytics
+* Duplicate communications
+* Increased storage usage
+* Poor customer experience
+Duplicate records reduce data accuracy and business efficiency.
+
+4. Duplicate Prevention Ideas
+-> Organizations use various methods to prevent duplicate records.
+Methods
+* Validation rules
+* Duplicate rules
+* Matching rules
+* Required fields
+* User training
+Benefits
+* Improved data quality
+* Better reporting
+* Reduced confusion
+* Increased accuracy
+* Better customer management
+Preventing duplicates is easier than cleaning them later.
+
+5. What is Data Migration?
+-> Data migration is the process of moving data from one system to another.
+Example
+A college moves from an old student management system to Salesforce.
+Data Migrated
+* Student records
+* Faculty records
+* Course information
+* Attendance history
+* Financial records
+Migration helps organizations modernize systems and improve operations.
+
+6. Why is Data Migration Difficult?
+-> Data migration involves many technical and business challenges.
+Challenges
+a. Data Quality Issues
+-> Existing data may contain errors.
+b. Missing Information
+-> Some records may be incomplete.
+c. Format Differences
+-> Systems may store data differently.
+d. Large Data Volumes
+-> Millions of records may need migration.
+e. Validation Requirements
+-> Data must meet new system requirements.
+Careful planning is essential for successful migration projects.
+
+7. What is Data Loader Used For?
+-> Data Loader is a Salesforce tool used to import, export, update, delete, and manage large amounts of data.
+Common Uses
+* Import records
+* Export data
+* Update existing records
+* Delete records
+* Perform bulk operations
+Benefits
+* Handles large datasets
+* Saves time
+* Supports automation
+* Improves efficiency
+* Simplifies data management
+Data Loader is widely used for enterprise data operations.
+
+8. Why Should Enterprises Validate Imported Data?
+-> Imported data should be validated before entering production systems.
+Validation Checks
+* Required fields present
+* Correct data formats
+* Duplicate detection
+* Business rule compliance
+* Data accuracy verification
+Benefits
+* Reduces errors
+* Improves reliability
+* Protects data quality
+* Supports compliance
+* Prevents system issues
+Validation helps ensure imported data is trustworthy and usable.
+
+9. Why are CSV Formats Important?
+-> CSV (Comma-Separated Values) files are commonly used for data exchange between systems.
+Benefits
+* Simple format
+* Easy to create
+* Supported by many applications
+* Easy to import and export
+* Human-readable structure
+Example
+Student Name, Course, GPA
+Rahul, BCA, 8.5
+Priya, BBA, 9.1
+CSV files simplify data migration and integration processes.
+
+10. Enterprise Risks During Bulk Import
+-> Bulk imports can affect thousands or millions of records at once.
+Risks
+a. Incorrect Mapping
+-> Data may be placed into wrong fields.
+b. Duplicate Creation
+-> Existing records may be duplicated.
+c. Data Loss
+-> Important information may be overwritten.
+d. Validation Failures
+-> Records may fail import requirements.
+e. System Performance Issues
+-> Large imports may impact system performance.
+Organizations must carefully plan bulk data operations.
+
+11. Enterprise Risks of Bad Data
+Suppose a university manages:
+* 50,000 Students
+* 5,000 Faculty Members
+* Financial Records
+* Academic Records
+Bad data can causee
+* Incorrect reports
+* Poor business decisions
+* Student communication failures
+* Compliance violations
+* Financial inaccuracies
+Data quality directly impacts business success and operational efficiency.
+
+12. Why Governance is Important in Data Management?
+-> Governance ensures that data is managed according to business policies and standards.
+Governance Goals
+* Data accuracy
+* Data security
+* Compliance
+* Accountability
+* Consistency
+Benefits
+* Improved trust in data
+* Better decision-making
+* Reduced business risk
+* Stronger compliance
+* Better operational control
+Governance helps organizations maintain reliable and secure data.
+Reflection
+What is the difference between storing data and managing enterprise data?
+-> Storing data simply means keeping information in a system.
+-> Managing enterprise data includes:
+* Data quality management
+* Duplicate prevention
+* Security controls
+* Governance policies
+* Validation processes
+* Data migration planning
+* Compliance requirements
+Enterprise data management focuses on maintaining accurate, secure, and reliable information for business operations.
+
+Revision Questions and Answers
+
+1. Why is clean data important?
+   -> Clean data improves accuracy, reporting, decision-making, and overall business efficiency.
+2. What problems happen because of duplicate records?
+   -> Duplicate records cause reporting errors, confusion, inaccurate analytics, and poor customer experiences.
+3. Why is data migration difficult?
+   -> Data migration involves quality issues, format differences, missing data, large volumes, and validation equirements.
+4. What is Data Loader used for?
+   -> Data Loader is used to import, export, update, delete, and manage large amounts of Salesforce data.
+5. Why should enterprises validate imported data?
+   -> Validation ensures data accuracy, prevents errors, and protects system reliability.
+6. Why are CSV formats important?
+   -> CSV files provide a simple and widely supported format for data exchange and migration.
+7. What risks happen during bulk import?
+   -> Risks include incorrect mapping, duplicates, data loss, validation failures, and performance issues.
+8. Why is governance important in data management?
+   -> Governance ensures data quality, security, compliance, accountability, and consistency across the organization.
