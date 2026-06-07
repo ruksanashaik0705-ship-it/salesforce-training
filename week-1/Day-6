@@ -1,1 +1,79 @@
-etwg
+saleforce_traininf Day-6
+
+1. What is SOQL?
+   ->SOQL (Salesforce Object Query Language) is a query language used in Salesforce to retrieve data from Salesforce objects. It is similar to SQL but is designed specifically for Salesforce data.
+Example:
+    ->SELECT Name FROM Student__c
+2. What is an Apex Trigger?
+   ->An Apex Trigger is a piece of code that executes automatically when a specific event occurs on a Salesforce record, such as insert, update, delete, or undelete.
+Example:
+    ->When a new student record is created, a welcome email can be sent automatically.
+3. Difference Between Flow and Trigger
+1.Flow
+   ->Declarative (no-code/low-code)
+   ->Easier to create and maintain
+   ->Best for simple business automation
+   ->Managed through Flow Builder
+2. Apex Trigger
+   ->Programmatic (requires coding)
+   ->Handles complex business logic
+   ->Better for advanced automation
+   ->Written in Apex language
+Example:
+   ->Sending a simple notification → Flow
+   ->Complex fee eligibility calculation → Apex Trigger
+4. Difference Between Before Trigger and After Trigger?
+1. Before Trigger
+  ->Executes before the record is saved.
+  ->Used for validations and updating field values.
+Example: 
+  ->Automatically set a student's status before saving the record.
+2. After Trigger
+  ->Executes after the record is saved.
+   ->Used when actions depend on the saved record.
+Example: 
+  ->Send a welcome email after student registration.
+
+5. Trigger Use Cases (College Management System)?
+1. Student Registration:
+  ->Event: After Student Insert
+  ->Action: Send welcome email to the student.
+2. Course Capacity Reached
+  ->Event: After Course Update
+  ->Action: Notify faculty that the course is full.
+3. Low Attendance
+  ->Event: After Attendance Update
+  ->Action: Send warning notification to the student.
+4. Fee Payment Completed
+  ->Event: After Fee Record Update
+  ->Action: Update student fee status to "Paid".
+5. Exam Results Published
+  ->Event: After Result Insert
+  ->Action: Notify students that results are available.
+6. Query Examples (English Queries)?
+  ->Find all students enrolled in Course A.
+  ->Find all courses handled by Faculty X.
+  ->Find students with attendance below 75%.
+  ->Find students who have not paid their fees.
+  ->Find courses with more than 50 enrolled students.
+  ->Find all faculty members in the Computer Science department.
+7. Reflection: Why Enterprise Systems React Automatically to Data Changes?
+  ->Enterprise systems handle large amounts of data and users. 
+  ->Automatic reactions to data changes improve efficiency, reduce manual work, ensure consistency, and provide real-time responses.
+  ->Event-driven automation helps organizations respond quickly to important business events such as registrations, payments, approvals, and notifications.
+
+Reflective Questions & Answers
+
+1. Why do systems need triggers?
+  ->Triggers allow systems to automatically perform actions when data changes occur, reducing manual effort and improving efficiency.
+2. Difference between polling and event-driven systems?
+  ->Polling: System continuously checks for changes.
+  ->Event-Driven: System reacts immediately when an event occurs.
+3. Why are database queries important?
+  ->Queries help retrieve specific data quickly and efficiently from large databases.
+4. When should Flows be preferred over Triggers?
+  ->Flows should be preferred when the automation is simple and can be implemented without coding.
+5. What problems happen if automation logic becomes too complex?
+  ->Complex automation becomes difficult to maintain, debug, and understand, which can increase errors.
+6. Why should developers think carefully before automating actions?
+  ->Poorly designed automation can create unnecessary processes, performance issues, and incorrect business outcomes.
