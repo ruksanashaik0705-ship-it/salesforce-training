@@ -1,1 +1,140 @@
-wfcf
+saleforce_training Day-9
+
+1. Component Communication?
+  ->Lightning Web Components communicate with each other to share data and coordinate actions within an application.
+1. Parent-to-Child Communication:
+  ->A parent component passes data to a child component using public properties.
+Example:
+* Dashboard Component → Student Information Component
+* Dashboard Component → Attendance Component
+2. Child-to-Parent Communication:
+  ->A child component sends information back to the parent using custom events.
+Example:
+* Attendance Component → Dashboard Component
+* Notification Component → Dashboard Component
+ Benefits of Component Communication:
+* Better organization
+* Reusable components
+* Easier maintenance
+* Improved scalability
+* Clear data flow
+2. Dashboard Architecture?
+ 1. Student Dashboard:
+ a.Components
+ * Header Component
+ * Student Profile Component
+ * Attendance Component
+ * Course List Component
+ * Notification Component
+ b. Communication
+ * Student Profile sends student details to Attendance and Course Components.
+ * Notification Component displays updates related to the student.
+2. Faculty Dashboard:
+a. Components
+* Header Component
+* Faculty Profile Component
+* Course Management Component
+* Attendance Management Component
+* Notification Component
+b.Communication
+* Faculty Profile communicates with Course Management.
+* Attendance Management updates course records.
+* Notifications display faculty-related announcements.
+3. Admin Dashboard:
+a. Components
+* Header Component
+* Student Management Component
+* Faculty Management Component
+* Course Allocation Component
+* Reports Component
+b. Communication
+* Student Management communicates with Course Allocation.
+* Faculty Management updates course assignments.
+* Reports Component collects information from all modules.
+
+3. Data Flow Thinking?
+  -> Process Chosen: Student Registration
+ Step 1 – User Interface (UI)
+  ->The student enters personal details such as:
+* Name
+* Student ID
+* Email
+* Department
+* Phone Number
+ Step 2 – Validation
+  ->The frontend validates:
+* Required fields
+* Email format
+* Duplicate entries
+* Data completeness
+If validation fails, an error message is displayed.
+ Step 3 – Flow
+  ->The validated information is sent from the UI component to the Salesforce server through Apex.
+ Step 4 – Apex Processing
+  ->The Apex controller:
+* Receives student information
+* Performs business validations
+* Checks system rules
+* Prepares records for storage
+ Step 5 – Database
+  ->The student record is stored in Salesforce objects.
+  ->Data is saved securely in the database.
+Step 6 – Notification
+  ->After successful registration:
+* Success message is displayed
+* Notification is generated
+* Confirmation email can be sent
+Modern vs Legacy Thinking
+4. Why did Salesforce move from Visualforce and Aura to LWC?
+1. Visualforce Limitations
+* Older page-centric architecture
+* Limited modern JavaScript support
+* Lower performance
+2. Aura Limitations
+* More complex development model
+* Slower performance
+* Proprietary framework concepts
+ Advantages of LWC
+* Built on modern web standards
+* Better performance
+* Faster rendering
+* Simpler development experience
+* Easier maintenance
+* Better scalability
+* Improved user experience
+Because of these advantages, Salesforce adopted Lightning Web Components as the preferred UI framework.
+6. Reflection Why do enterprise applications need modular architecture?
+  ->Enterprise applications are large and complex. Modular architecture divides the system into smaller independent components.
+Benefits include:
+* Easier maintenance
+* Better scalability
+* Reusable modules
+* Faster development
+* Improved testing
+* Better team collaboration
+* Reduced system complexity
+Modular architecture allows organizations to grow applications efficiently without affecting existing functionality.
+
+ Revision Questions and Answers
+ 1. Why do components communicate?
+  ->Components communicate to share information, coordinate actions, and create dynamic user experiences within applications.
+  ->Communication allows different parts of the application to work together efficiently.
+ 2. Difference between parent-child communication and events?
+ 1.Parent-to-Child Communication:
+* Uses public properties.
+* Parent sends data to child.
+ 2.Child-to-Parent Communication:
+* Uses custom events.
+* Child sends information back to parent.
+ 3. Why is modular architecture useful?
+  ->Modular architecture improves maintainability, scalability, testing, and code reusability while reducing complexity.
+ 4. Why did Salesforce move toward LWC?
+  ->Salesforce moved to LWC because it provides better performance, modern web standards support, easier development, and improved user experience.
+ 5. What problems happen in tightly coupled systems?
+  ->Tightly coupled systems are difficult to maintain, test, modify, and scale because changes in one module often affect multiple other modules.
+ 6. Why is frontend architecture important?
+  ->Frontend architecture improves user experience, application performance, maintainability, and component organization.
+ 7. Why should UI and backend remain separate?
+  ->Separating UI and backend improves security, scalability, maintainability, testing, and development efficiency.
+ 8. Why do large systems need reusable modules?
+  ->Reusable modules reduce duplicate code, improve consistency, speed up development, simplify maintenance, and support scalability.
