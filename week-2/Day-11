@@ -1,1 +1,147 @@
-knceafs.
+saleforce_training Day-11
+
+1.Why Testing Matters?
+  ->Testing is the process of verifying that software works correctly and meets business requirements. In Salesforce, Apex testing helps ensure that new features do not introduce bugs into existing functionality.
+ Benefits of Testing
+* Improves software reliability
+* Prevents production issues
+* Validates business logic
+* Reduces maintenance costs
+* Ensures application stability
+* Supports safe deployment
+Enterprise systems rely heavily on testing because even small errors can affect thousands of users.
+2. What is Asynchronous Processing?
+  -->Asynchronous processing allows tasks to run in the background without making users wait for completion.
+  ->Instead of executing everything immediately, the system processes long-running tasks separately.
+Examples of Asynchronous Apex
+* Future Methods
+* Queueable Apex
+* Batch Apex
+* Scheduled Apex
+Benefits
+* Faster user experience
+* Better scalability
+* Handles large workloads
+* Prevents system timeouts
+* Improves performance
+Important Test Cases for College Management System
+1. Invalid Email Format
+a. Test
+  ->Enter an incorrectly formatted email address.
+b. Prevents
+  ->Invalid student contact information being stored.
+ 2. Duplicate Student Registration
+a. Test
+  ->Attempt to register the same student twice.
+b. Prevents
+  ->Duplicate records and inaccurate reporting.
+ 3. Course Seats Exceed Limit
+a. Test
+  ->Register students beyond available seats.
+b.Prevents
+  ->Overbooking of courses.
+ 4. Missing Required Fields
+a.Test
+  ->Submit registration without mandatory information.
+b. Prevents
+  ->Incomplete records.
+ 5. Attendance Below Threshold
+a. Test
+  ->Student attendance falls below minimum requirement.
+b.Prevents
+  ->Incorrect eligibility calculations.
+ 6. Faculty Assignment Validation
+a. Test
+  ->Assign a course without a faculty member.
+b. Prevents
+  ->Unmanaged courses.
+ 7. Formula Field Accuracy
+a. Test
+  ->Verify attendance percentage calculations.
+b.Prevents
+  ->Incorrect reporting and decisions.
+ 8. Notification Delivery Failure
+a. Test
+  ->Simulate notification processing issues.
+b.Prevents
+  ->Missed alerts and communication failures.
+
+4. Async Use Cases?
+ 1. Bulk Email Sending
+  ->Sending thousands of confirmation emails should happen in the background.
+Benefit
+  ->Users do not wait for email delivery.
+2. Report Generation
+  ->Generating large reports can take significant time.
+ Benefit
+  ->Improves user experience.
+ 3. Large Data Import
+  ->Processing thousands of records should be asynchronous.
+Benefit
+  ->Prevents timeouts.
+ 4. Notification Processing
+  ->Alerts and notifications can be queued.
+ Benefit
+  ->Improves system responsiveness.
+ 5. External System Synchronization
+  ->Integrating with external applications often requires background processing.
+ Benefit
+  ->Reduces delays and improves reliability.
+5.Reliability Discussion?
+ Scenario 1: Student Registration Failure
+ Problems
+* Student record not created
+* Duplicate attempts
+* Lost information
+ Testing Helps By
+* Verifying registration workflows
+* Detecting failures before deployment
+ Scenario 2: Payment Update Failure
+ Problems
+* Incorrect payment status
+* Financial reporting errors
+* Student access issues
+Testing Helps By
+* Validating payment processes
+* Preventing calculation mistakes
+Scenario 3: Attendance Update Failure
+Problems
+* Incorrect attendance percentages
+* Wrong eligibility decisions
+* Inaccurate reports
+ Testing Helps By
+* Verifying attendance calculations
+* Ensuring data consistency
+6. Reflection Why do enterprise systems require testing, scalability, and asynchronous processing instead of simple direct execution?
+  ->Enterprise systems support thousands or millions of users and process large amounts of data. 
+  ->Simple direct execution is often insufficient because it can cause slow performance, system failures, and poor user experience.
+ Testing
+  ->Ensures software quality and reliability.
+ Scalability
+  ->Allows systems to handle growing numbers of users and data.
+ Asynchronous Processing
+  ->Enables long-running tasks to execute efficiently in the background.
+  ->Together, these practices create reliable, efficient, and enterprise-ready applications.
+Revision Questions and Answers
+
+ 1. Why is testing important?
+  ->Testing ensures software works correctly, prevents bugs, and improves reliability before deployment.
+ 2. What problems happen without testing?
+  ->Applications may contain bugs, security issues, data inconsistencies, and unexpected failures.
+ 3. Difference between synchronous and asynchronous execution?
+  ->Tasks execute immediately and users wait until completion.
+  ->Tasks run in the background while users continue working.
+ 4. Why do enterprise systems use background jobs?
+  ->Background jobs improve performance, handle large workloads, and prevent users from waiting for long-running processes.
+ 5. Why should developers think about scalability?
+  ->Applications must continue performing well as users, records, and transactions increase.
+ 6. Why are test cases important?
+  ->Test cases verify expected behavior and help identify defects before software reaches users.
+ 7. What happens when systems fail partially?
+  ->Partial failures can create inconsistent data, incomplete transactions, lost information, and poor user experiences.
+ 8. Why do large systems require reliability engineering?
+  ->Reliability engineering ensures systems remain available, stable, and resilient even under heavy usage.
+ 9. Why should enterprise software avoid blocking operations?
+  ->Blocking operations reduce performance, increase wait times, and negatively affect user experience.
+ 10. Why is enterprise software different from small scripts?
+  ->Enterprise software must support many users, large data volumes, security requirements, testing standards, scalability, and long-term maintenance.
