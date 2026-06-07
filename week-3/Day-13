@@ -1,1 +1,159 @@
-fj,sew
+saleforce_training Day-13
+
+1. What is CI/CD?
+CI/CD stands for:
+a. Continuous Integration (CI)
+  ->Developers regularly merge code changes into a shared repository. Automated testing validates changes before integration.
+b. Continuous Delivery/Deployment (CD)
+  ->Validated code is automatically prepared and deployed to testing or production environments.
+Benefits of CI/CD
+* Faster software delivery
+* Early bug detection
+* Improved software quality
+* Reduced deployment risk
+* Better collaboration
+* Reliable releases
+CI/CD helps teams deliver software safely and efficiently.
+
+2. Why Deployment Workflow Matters?
+  ->A deployment workflow defines how changes move from development to production.
+Typical Workflow
+1. Developer writes code
+2. Code committed to GitHub
+3. Automated tests run
+4. Validation checks performed
+5. Deployment to testing environment
+6. User acceptance testing
+7. Production deployment
+ Benefits
+* Controlled releases
+* Reduced downtime
+* Improved reliability
+* Easier troubleshooting
+* Better team coordination
+Without a deployment workflow, software releases become risky and difficult to manage.
+
+3.Enterprise Deployment Risks
+ ->Why Directly Editing Production is Dangerous
+  ->Suppose the College Management System serves:
+* 50,000 Students
+* 500 Faculty Members
+* Multiple Administrators
+  ->Direct changes in production can cause serious problems.
+a.Bugs
+  ->A coding error may break registration or attendance systems.
+b. Downtime
+  ->Users may be unable to access critical functionality.
+c. Broken Workflows
+  ->Automations, Flows, and Apex logic may stop working correctly.
+d. Data Loss
+  ->Incorrect updates may corrupt or delete important records.
+e. Security Risks
+  ->Improper changes may expose sensitive information.
+  ->For these reasons, enterprise teams never make major changes directly in production.
+
+Team Collaboration Scenario
+4. What Problems Might Happen Without GitHub?
+* No code history
+* Lost changes
+* Difficulty tracking bugs
+* No rollback capability
+5. What Problems Might Happen Without Branches?
+* Developers overwrite each other's work
+* Feature conflicts occur
+* Testing becomes difficult
+ What Problems Might Happen Without Deployment Workflow?
+* Uncontrolled releases
+* Increased production failures
+* Inconsistent environments
+ What Problems Might Happen Without Testing?
+* Undetected bugs reach users
+* Data corruption risks increase
+* Business processes fail
+Version control, testing, and deployment workflows are essential for team success.
+5. GitHub + DX + DevOps Explanation?
+a. GitHub
+GitHub provides:
+* Version control
+* Collaboration
+* Branch management
+* Code reviews
+* Rollback support
+b. Salesforce DX
+Salesforce DX provides:
+* Source-driven development
+* Modern project structure
+* Team collaboration support
+* Automated deployment capabilities
+c. DevOps
+  ->DevOps combines development and operations practices to improve software delivery.
+Benefits include:
+* Automation
+* Faster releases
+* Better quality
+* Improved reliability
+* Continuous improvement
+Together, GitHub, Salesforce DX, and DevOps create a modern enterprise development workflow.
+6. CI/CD Thinking?
+ Workflow Explanation
+Step 1: Developer Writes Code
+  ->A developer creates a new feature or fixes a bug.
+ Why Important?
+  ->Adds business value and functionality.
+ Step 2: GitHub Commit
+  ->Code is stored in a version-controlled repository.
+ Why Important?
+  ->Tracks changes and supports collaboration.
+ Step 3: Automated Testing
+  ->Test cases validate functionality.
+Why Important?
+  ->Detects issues before deployment.
+Step 4: Validation
+  ->Code quality and deployment checks run.
+ Why Important?
+  ->Prevents invalid deployments.
+Step 5: Deployment
+  ->Validated code is deployed to the target environment.
+ Why Important?
+  ->Moves approved changes safely.
+ Step 6: Production Release
+  ->Users receive access to the new functionality.
+ Why Important?
+  ->Delivers business value while minimizing risk.
+7. Reflection What is the difference between writing code and engineering enterprise software?
+  ->Writing code focuses on creating functionality.
+  ->Engineering enterprise software involves much more:
+* Planning
+* Collaboration
+* Testing
+* Security
+* Deployment
+* Monitoring
+* Reliability
+* Scalability
+* Maintenance
+  ->A developer may write code, but an engineer ensures the entire system operates reliably for thousands of users.
+  ->Enterprise software development requires teamwork, processes, automation, and quality control in addition to coding skills.
+
+ Revision Questions and Answers
+ 1. Why is deployment workflow important?
+  ->Deployment workflows provide controlled, reliable, and repeatable software releases while reducing deployment risks.
+ 2. Why should teams avoid editing production directly?
+  ->Direct production changes can introduce bugs, downtime, security issues, and data loss without proper testing.
+ 3. What problems happen without version control?
+  ->Teams may lose code, overwrite changes, struggle to track history, and lack rollback capabilities.
+4. Why do enterprise systems require CI/CD?
+  ->CI/CD automates testing and deployment, improves software quality, reduces risk, and speeds up releases.
+ 5. Why should testing happen before deployment?
+  ->Testing identifies bugs and validates functionality before changes reach users.
+ 6. Why do large teams need branches?
+  ->Branches allow developers to work independently without affecting each other's code.
+ 7. What is rollback and why is it important?
+  ->Rollback restores a previous stable version of software when deployment issues occur, minimizing business impact.
+ 8. Why are deployment pipelines useful?
+   ->Deployment pipelines automate validation, testing, and deployment processes, improving consistency and reliability.
+ 9. Why is DevOps important in modern software engineering?
+  ->DevOps improves collaboration, automation, deployment speed, software quality, and operational reliability.
+10. Why is enterprise software development different from simple coding?
+  ->Enterprise software requires collaboration, testing, security, scalability, deployment planning, monitoring, and long-term maintenance, while simple coding focuses mainly on functionality.
+
