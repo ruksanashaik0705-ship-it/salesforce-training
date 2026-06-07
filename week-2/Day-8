@@ -1,1 +1,108 @@
-cgdmf,i7
+Saleforce_training Day-8
+
+1. What is LWC?
+ ->Lightning Web Components (LWC) is Salesforce's modern UI development framework built on web standards 
+ ->such as HTML, JavaScript, and CSS. LWC allows developers to create fast, reusable, and lightweight components for Salesforce applications.
+Each LWC component typically contains:
+ * HTML file (UI structure)
+ * JavaScript file (logic)
+ * Meta XML file (configuration)
+ * Optional CSS file (styling)
+LWC follows a component-based architecture where applications are built using small reusable pieces.
+
+2. Why Salesforce Uses LWC?
+ ->Salesforce adopted Lightning Web Components because:
+1. Better performance
+2. Faster rendering
+3. Uses modern web standards
+4. Reusable and maintainable code
+5. Easier development experience
+6. Improved user experience
+7. Supports scalable enterprise applications
+
+LWC helps developers build modern Salesforce applications efficiently while reducing maintenance effort.
+
+3. UI Thinking Exercise?
+ -> College Management System – Required UI Screens
+ 1. Student Registration Form
+  ->Used to register new students and capture personal information.
+2. Course Dashboard
+  ->Displays available courses, enrolled courses, and course details.
+3. Attendance Management Screen
+  ->Shows attendance records and attendance percentages.
+4. Faculty Management Panel
+  ->Allows faculty members to manage classes, assignments, and student records.
+5. Notifications Widget
+  ->Displays announcements, exam schedules, and important updates.
+4. Component Thinking?
+->Selected Screen: Student Dashboard
+ ->Reusable Components
+1. Header Component
+ ->Displays college logo, navigation menu, and user profile.
+2. Student Information Component
+ ->Shows student name, ID, department, and contact details.
+3. Attendance Component
+ ->Displays attendance statistics and attendance percentage.
+4. Course List Component
+ ->Shows enrolled courses and course information.
+5. Notification Component
+ ->Displays recent announcements and alerts.
+Why Reusable Components are Useful:
+* Reduce code duplication
+* Improve maintainability
+* Increase development speed
+* Provide consistent user experience
+* Easier testing and debugging
+* Components can be reused across multiple pages
+For example, the Notification Component can be used on the Student Dashboard, Faculty Dashboard, and Admin Dashboard without rewriting the code.
+
+5.Frontend vs Backend Logic?
+ 1. Frontend (UI Layer)
+   ->Responsible for user interaction and presentation.
+Examples:
+* Button click handling
+* Form input collection
+* Displaying notifications
+* Showing validation messages
+* Navigation between screens
+* User interface rendering
+2. Backend (Apex Layer)
+  ->Responsible for business logic and data processing.
+Examples:
+* Database operations
+* Fee calculation
+* Attendance calculations
+* Security enforcement
+* Data validation rules
+* Integration with external systems
+6. Reflection Why do modern enterprise systems use component-based UI architecture?
+  ->Modern enterprise systems use component-based architecture because it improves scalability, maintainability, and development speed. 
+  ->Applications are divided into smaller reusable components that can be independently developed, tested, and maintained.
+Benefits include:
+* Faster development
+* Reusable code
+* Easier maintenance
+* Better performance
+* Consistent user experience
+* Improved scalability
+* Simplified testing
+Component-based architecture is essential for large enterprise applications where multiple teams work on the same system.
+
+Revision Questions and Answers
+ 1. What is a component?
+  ->A component is a reusable and independent piece of a user interface that performs a specific function within an application.
+2. Why are reusable components useful?
+  ->Reusable components reduce duplicate code, improve maintainability, speed up development, and provide a consistent user experience.
+3. Difference between frontend and backend?
+  ->Frontend handles user interaction and display, while backend manages business logic, database operations, and security.
+ 4. Why did Salesforce move toward LWC?
+  ->Salesforce moved toward LWC to improve performance, leverage modern web standards, and provide a better development experience.
+ 5. Why is UI important in enterprise systems?
+  ->A good UI improves productivity, usability, user satisfaction, and overall business efficiency.
+ 6. Why should systems separate UI and business logic?
+  ->Separation improves maintainability, scalability, security, testing, and code organization.
+7. What security risks exist in enterprise applications?
+  ->Common risks include unauthorized access, data breaches, insecure APIs, data manipulation, and insufficient access controls.
+ 8. Why should developers think modularly?
+  ->Modular thinking enables code reuse, easier maintenance, better scalability, improved collaboration, and faster development.
+
